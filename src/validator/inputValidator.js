@@ -17,9 +17,7 @@ const isAllPresent = (obj,dataObj) => {
                         return `${key} should have object datatype`; break;
 
             case "num" : if( typeof obj[key] != 'number' ) 
-            return `${key} should have number datatype`; break;
-            case "bol" : if( typeof obj[key] != 'boolean' ) return false; break;
-            case "date" : 
+            return `${key} should have number datatype`; break; 
            }
         }
         else if( typeof obj[key] != 'string' )
